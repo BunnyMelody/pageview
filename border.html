@@ -1,0 +1,34 @@
+<!DOCTYPE htmll>
+<html>
+  <head>
+    <meta charset="uft-8"/>
+    <title>安卓手机不能正常显示实线和虚线</title>
+    <script>
+    !function(t){var i=t.desiginWidth||750,d=t.document;function e(){var e=d.documentElement&&d.documentElement.clientWidth||t.innerWidth,n=e/(i/100);1024<e?n=16:768<=e&&(n=90),d.getElementsByTagName("html")[0].style.fontSize=n+"px",t.fontSize=n}t.addEventListener?t.addEventListener("resize",e):t.onresize=e,e()}(window);
+    </script>
+    <style>
+      
+      html, body{
+        font-size: .32rem;
+      }
+      .test1{
+        border: .2rem solid #ff0204;
+       }
+       .test2{
+        border: .3rem dashed #ff0204;
+       }
+       .test3{
+        border: .2rem solid #ff0204;
+       }
+       .test4{
+        border: .3rem dashed #ff0204;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="test1">测试1</div>
+    <div class="test2">测试2</div>
+    <div class="test1">测试3</div>
+    <div class="test1">测试4</div>
+  </body>
+</html>
