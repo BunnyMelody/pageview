@@ -1,4 +1,5 @@
 <!DOCTYPE html5>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <style>
@@ -31,26 +32,25 @@
 </head>
 <body>
     <div class="tagBall">
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">某某某</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">abc测试</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">某某某</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">abc测试</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">某某某</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">abc测试</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">某某某</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">abc测试</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">某某某</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">abc测试</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">某某某</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">abc测试</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">某某某</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">abc测试</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">某某某</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">abc测试</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">某某某</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">abc测试</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">某某某</a>
-        <a class="tag" target="_blank" href="http://2.axescanvas.sinaapp.com/LoveDemo/secondLove.html">某某某</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">某某某</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">abc测试</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">某某某</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">abc测试</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">某某某</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">abc测试</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">某某某</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">abc测试</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">某某某</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">abc测试</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">某某某</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">abc测试</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">某某某</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">abc测试</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">某某某</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">abc测试</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">某某某</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">abc测试</a>
+        <a class="tag" target="_blank" href="https://m.fenqile.com/">某某某</a>
     </div>
     <script>
         var tagEle = "querySelectorAll" in document ? document.querySelectorAll(".tag") : getClass("tag"),
@@ -117,7 +117,6 @@
                 this.y = y1;
                 this.z = z1;
             })
-            
         }
 
         function rotateY(){
@@ -149,6 +148,7 @@
                 }
                 var alpha = (this.z+RADIUS)/(2*RADIUS);
                 this.ele.style.opacity = alpha+0.5;
+                this.ele.style.filter = "alpha(opacity = "+(alpha+0.5)*100+")";
                 this.ele.style.zIndex = parseInt(scale*100);
                 this.ele.style.transform = "translate(" + (this.x + CX - this.ele.offsetWidth/2) +"px, " + (this.y + CY - this.ele.offsetHeight/2)+"px) scale(" + scale + ")";
             }
