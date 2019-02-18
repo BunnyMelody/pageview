@@ -1,7 +1,7 @@
 <!DOCTYPE html5>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
     <style>
         .tagBall{
             width: 700px;
@@ -58,12 +58,13 @@
             RADIUS = 300,
             fallLength = 800,
             tags=[],
-            angleX = Math.PI/500,
-            angleY = Math.PI/500,
+            // x: 90, y: 540
+            // angleX = Math.PI/500,
+            angleX = Math.PI/150,
+            // angleY = -Math.PI/500,
+            angleY =  -Math.PI/500,
             CX = paper.offsetWidth/2,
-            // CX = 300,
             CY = paper.offsetHeight/2,
-            // CY = 150,
             EX = paper.offsetLeft + document.body.scrollLeft + document.documentElement.scrollLeft,
             EY = paper.offsetTop + document.body.scrollTop + document.documentElement.scrollTop;
 
