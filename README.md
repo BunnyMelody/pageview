@@ -1,5 +1,7 @@
 # pageview
 page test 
 for page-view
-link: https://bunnymelody.github.io/pageview/border.html
 
+```
+https://bunnymelody.github.io/pageview/${pageName}.html
+```
