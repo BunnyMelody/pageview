@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>img-report</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p>result in network</p>
+<script type="text/javascript">
+const handlerReportRequest = (requestUrl) => {
+ if (!requestUrl) return false;
+ try {
+	let img = new Image();
+	img.onload = img.onerror = () => {
+		img.style.display = 'none'
+		document.body.removeChild(img);
+		img = null;
+	};
+	img.src = requestUrl;
+	document.body.appendChild(img);
+ } catch (e) {
+ 	console.warn(e)
+ }
+};
+
+const requestUrl = 'https://k.kuaishou.com/rest/web/task/debug/track/activate?callback=k7QZ4LcLG92Fwk1ehOjsAMCiDADJsJtDB3rY1k5OF0l1lgChaUqjpf_EZCRL56bxd7hdr9-njBEBvoFp6LrpKATJZ6KUYZeeAUSLTa1th80&event_time=1600157077075&event_type=2';
+handlerReportRequest(requestUrl);
+</script>
+</body>
+</html>
