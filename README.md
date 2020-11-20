@@ -1,7 +1,6 @@
 # pageview
-page test 
-for page-view
+This project is used to provide test demos.
 
 ```
-https://bunnymelody.github.io/pageview/${pageName}.html
+https://bunnymelody.github.io/pageview/${dir}/${pageName}.html
 ```
